@@ -1,0 +1,8 @@
+[user]
+	name = Nicholas Ngai
+	email = ngai.nicholas@protonmail.com
+	signingkey = 65358B5A905963F4
+[core]
+	excludesfile = ~/.gitignore
+[commit]
+    gpgsign = true
