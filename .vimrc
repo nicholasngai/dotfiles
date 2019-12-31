@@ -13,4 +13,6 @@ autocmd FileType css,html,javascript,json,typescript,yaml setlocal tabstop=2 shi
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'leafgarland/typescript-vim'
+
 call plug#end()
