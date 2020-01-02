@@ -3,6 +3,8 @@ syntax on
 set number
 set ruler
 
+set backspace=indent,eol,start
+
 filetype plugin indent on
 set tabstop=4 shiftwidth=4 expandtab
 
