@@ -6,12 +6,12 @@ set ruler
 set backspace=indent,eol,start
 
 filetype plugin indent on
-set tabstop=4 shiftwidth=4 expandtab
+set tabstop=2 shiftwidth=2 expandtab
 
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-autocmd FileType css,html,javascript,json,markdown,typescript,yaml setlocal tabstop=2 shiftwidth=2
+autocmd FileType c,cpp,java setlocal tabstop=4 shiftwidth=4
 
 call plug#begin('~/.vim/plugged')
 
