@@ -3,6 +3,7 @@ export CPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include:$CP
 export HOMEBREW_CASK_OPTS='--appdir=~/Applications'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+export GPG_TTY=$(tty)
 export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
 
 function socksssh() {
