@@ -18,7 +18,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'leafgarland/typescript-vim'
 Plug 'prettier/vim-prettier'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe', { 'do': '~/.vim/plugged/YouCompleteMe/install.py --all --clangd-completer' }
 
 call plug#end()
 
