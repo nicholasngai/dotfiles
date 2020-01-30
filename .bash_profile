@@ -1,4 +1,5 @@
 export PATH=/usr/local/opt/openssl@1.1/bin:/usr/local/sbin:$PATH
+export CPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include:$CPATH
 export HOMEBREW_CASK_OPTS='--appdir=~/Applications'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
