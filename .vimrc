@@ -1,7 +1,8 @@
 syntax on
 
-set number
-set ruler
+set encoding=utf8
+
+set number ruler
 
 set backspace=indent,eol,start
 
