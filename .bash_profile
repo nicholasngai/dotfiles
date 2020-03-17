@@ -1,4 +1,4 @@
-export PATH=/usr/local/opt/openssl@1.1/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/opt/mysql@5.7/bin:/usr/local/opt/mysql-client@5.7/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/sbin:$PATH
 export CPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include:$CPATH
 export HOMEBREW_CASK_OPTS='--appdir=~/Applications'
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -58,6 +58,5 @@ alias tar='tar --disable-copyfile --exclude=.DS_Store'
 alias gpg='gpg --expert --no-symkey-cache'
 alias certbot='certbot --config-dir /usr/local/etc/letsencrypt/ --logs-dir /usr/local/var/log/letsencrypt/ --work-dir /usr/local/var/lib/letsencrypt/'
 alias mysqlssh='ssh -fN -L 3307:localhost:3306 nngai@pedantry.hopto.org && mysql -h localhost -P 3307 -u root; killall ssh'
-export PATH="/usr/local/opt/mysql@5.7/bin:/usr/local/opt/mysql-client@5.7/bin:$PATH"
 
 source $HOME/Documents/School/2020\ Spring/CS\ 61B/cs61b-software/adm/login
