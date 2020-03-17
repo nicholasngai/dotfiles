@@ -17,6 +17,8 @@ autocmd FileType css,html,javascript,json,markdown,scss,typescript,yaml setlocal
 autocmd FileType go setlocal noexpandtab
 autocmd FileType markdown setlocal textwidth=80 spell spelllang=en_us
 
+autocmd FileType typescriptreact setlocal filetype=typescript
+
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
