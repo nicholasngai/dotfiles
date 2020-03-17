@@ -39,6 +39,7 @@ augroup END
 call plug#begin('~/.vim/plugged')
 
 Plug 'leafgarland/typescript-vim'
+Plug 'majutsushi/tagbar'
 Plug 'prettier/vim-prettier'
 Plug 'ycm-core/YouCompleteMe', { 'do': '~/.vim/plugged/YouCompleteMe/install.py --all --clangd-completer' }
 
@@ -74,3 +75,7 @@ let g:prettier#config#prose_wrap = 'preserve'
 let g:prettier#config#html_whitespace_sensitivity = 'css'
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html PrettierAsync
+
+autocmd BufReadPost,BufNewFile * TagbarOpen
+autocmd BufWritePost * TagbarClose
+autocmd BufWritePost * TagbarOpen
