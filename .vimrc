@@ -14,6 +14,7 @@ map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
 autocmd FileType css,html,javascript,json,markdown,typescript,yaml setlocal tabstop=2 shiftwidth=2
+autocmd FileType markdown setlocal textwidth=80 spell spelllang=en_us
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -69,4 +70,4 @@ let g:prettier#config#prose_wrap = 'preserve'
 " css|strict|ignore
 let g:prettier#config#html_whitespace_sensitivity = 'css'
 
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html PrettierAsync
