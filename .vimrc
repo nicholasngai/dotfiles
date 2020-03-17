@@ -3,6 +3,7 @@ syntax on
 set encoding=utf8
 
 set number ruler
+set colorcolumn=80
 
 set backspace=indent,eol,start
 
