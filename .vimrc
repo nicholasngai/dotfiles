@@ -15,6 +15,11 @@ map <ScrollWheelDown> <C-E>
 
 autocmd FileType css,html,javascript,json,markdown,typescript,yaml setlocal tabstop=2 shiftwidth=2
 
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
 " vim -b : edit binary using xxd-format!
 augroup Binary
   au!
