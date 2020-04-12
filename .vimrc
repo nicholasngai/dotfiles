@@ -53,7 +53,7 @@ call plug#end()
 let g:prettier#autoformat = 0
 
 " max line length that prettier will wrap on
-let g:prettier#config#print_width = 80
+let g:prettier#config#print_width = 120
 " number of spaces per indentation level
 let g:prettier#config#tab_width = 2
 " use tabs over spaces
