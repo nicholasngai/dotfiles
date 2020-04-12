@@ -13,11 +13,9 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-autocmd FileType css,html,javascript,json,markdown,scss,typescript,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType css,html,javascript,json,markdown,scss,typescript,typescriptreact,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType go setlocal noexpandtab
 autocmd FileType markdown setlocal textwidth=80 spell spelllang=en_us
-
-autocmd FileType typescriptreact setlocal filetype=typescript
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -38,10 +36,17 @@ augroup END
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'leafgarland/typescript-vim'
+" Utilities
 Plug 'majutsushi/tagbar'
 Plug 'prettier/vim-prettier'
 Plug 'ycm-core/YouCompleteMe', { 'do': '~/.vim/plugged/YouCompleteMe/install.py --all --clangd-completer' }
+
+" TypeScript/TSX
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
+" Puppet
+Plug 'rodjek/vim-puppet'
 
 call plug#end()
 
