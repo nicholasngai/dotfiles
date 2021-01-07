@@ -4,6 +4,6 @@
 [core]
 	excludesfile = ~/.gitignore
 [commit]
-    gpgsign = true
+	gpgsign = true
 [pull]
 	rebase = true
