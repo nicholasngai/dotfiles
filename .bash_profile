@@ -42,20 +42,6 @@ function wiresharkssh() {
     rm /tmp/tcpdump;
 }
 
-function wpenumusers() {
-    for i in `seq -w 1 $2`; do
-        sleep 1;
-        echo "$i: "`curl -A '' -Lvx socks5h://localhost:9050 "$1/?author=$i" 2>&1 | grep -oE '(?:Location.*|<title>.*?</title>)' | tr -d '\r' | tr '\n' ' '` &
-    done | tee /dev/tty | sort > wpuserenum.txt;
-}
-
-function wpenumusersdirect() {
-    for i in `seq -w 1 $2`; do
-        sleep 1;
-        echo "$i: "`curl -A '' -Lv "$1/?author=$i" 2>&1 | grep -oE '(?:Location.*|<title>.*?</title>)' | tr -d '\r' | tr '\n' ' '` &
-    done | tee /dev/tty | sort > wpuserenum.txt;
-}
-
 alias tar='tar --disable-copyfile --exclude=.DS_Store'
 alias gpg='gpg --expert --no-symkey-cache'
 alias certbot='certbot --config-dir /usr/local/etc/letsencrypt/ --logs-dir /usr/local/var/log/letsencrypt/ --work-dir /usr/local/var/lib/letsencrypt/'
