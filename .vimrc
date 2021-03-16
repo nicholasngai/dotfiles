@@ -80,7 +80,3 @@ let g:prettier#config#prose_wrap = 'preserve'
 let g:prettier#config#html_whitespace_sensitivity = 'css'
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html PrettierAsync
-
-autocmd BufReadPost,BufNewFile * TagbarOpen
-autocmd BufWritePost * TagbarClose
-autocmd BufWritePost * TagbarOpen
