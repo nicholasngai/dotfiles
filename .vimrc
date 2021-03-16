@@ -15,7 +15,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-autocmd FileType css,html,javascript,json,markdown,scss,typescript,typescriptreact,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType css,html,javascript,json,markdown,scss,typescript,typescriptreact,verilog,xhtml,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType go setlocal noexpandtab
 autocmd FileType markdown setlocal spell spelllang=en_us
 
