@@ -4,6 +4,8 @@ set encoding=utf8
 
 set number ruler
 set colorcolumn=80
+set textwidth=80
+set formatoptions-=t
 
 set backspace=indent,eol,start
 
@@ -15,7 +17,7 @@ map <ScrollWheelDown> <C-E>
 
 autocmd FileType css,html,javascript,json,markdown,scss,typescript,typescriptreact,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType go setlocal noexpandtab
-autocmd FileType markdown setlocal textwidth=80 spell spelllang=en_us
+autocmd FileType markdown setlocal spell spelllang=en_us
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -53,7 +55,7 @@ call plug#end()
 let g:prettier#autoformat = 0
 
 " max line length that prettier will wrap on
-let g:prettier#config#print_width = 120
+let g:prettier#config#print_width = 80
 " number of spaces per indentation level
 let g:prettier#config#tab_width = 2
 " use tabs over spaces
