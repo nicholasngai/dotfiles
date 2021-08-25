@@ -13,7 +13,7 @@ function socksssh() {
         for service in $(networksetup -listallnetworkservices | tail -n +2); do
             networksetup -setsocksfirewallproxy $service localhost 1080;
         done;
-        ssh -NvD localhost:1080 $1;
+        ssh -NvD localhost:1080 "$@";
         for service in $(networksetup -listallnetworkservices | tail -n +2); do
             networksetup -setsocksfirewallproxystate $service off;
         done;
@@ -21,13 +21,7 @@ function socksssh() {
 }
 
 function vncssh() {
-    sshhost=$1;
-    if [ -z "$2" ]; then
-        vnchost=localhost;
-    else
-        vnchost=$2;
-    fi;
-    (sleep 2; open vnc://localhost:5910;) & ssh -NvL 5910:$vnchost:5900 $sshhost;
+    (sleep 2; open vnc://localhost:5910;) & ssh -NvL 5910:localhost:5900 "$@";
     #if [ $? -eq 0 ]; then
     #    open vnc://localhost:5910;
     #fi;
