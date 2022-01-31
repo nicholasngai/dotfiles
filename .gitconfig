@@ -2,7 +2,7 @@
 	name = Nicholas Ngai
 	signingkey = 65358B5A905963F4
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore-global
 [commit]
 	gpgsign = true
 [pull]
