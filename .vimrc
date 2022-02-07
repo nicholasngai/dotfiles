@@ -41,7 +41,7 @@ call plug#begin('~/.vim/plugged')
 " Utilities
 Plug 'majutsushi/tagbar'
 Plug 'prettier/vim-prettier'
-Plug 'ycm-core/YouCompleteMe', { 'do': '~/.vim/plugged/YouCompleteMe/install.py --all --clangd-completer' }
+Plug 'ycm-core/YouCompleteMe'
 
 " TypeScript/TSX
 Plug 'leafgarland/typescript-vim'
