@@ -50,6 +50,12 @@ Plug 'peitalin/vim-jsx-typescript'
 " Puppet
 Plug 'rodjek/vim-puppet'
 
+" GLSL
+Plug 'tikhomirov/vim-glsl'
+
+" Prisma
+Plug 'pantharshit00/vim-prisma'
+
 call plug#end()
 
 let g:prettier#autoformat = 0
