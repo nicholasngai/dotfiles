@@ -4,7 +4,7 @@ set encoding=utf8
 
 set number ruler
 set colorcolumn=80
-set textwidth=80
+set textwidth=79
 set formatoptions-=t
 
 set backspace=indent,eol,start
