@@ -17,7 +17,7 @@ map <ScrollWheelDown> <C-E>
 
 autocmd FileType css,html,javascript,json,markdown,scss,typescript,typescriptreact,verilog,xhtml,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType go setlocal noexpandtab
-autocmd FileType markdown setlocal spell spelllang=en_us
+autocmd FileType html,markdown,xhtml setlocal spell spelllang=en_us
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
