@@ -5,6 +5,8 @@ export PATH=/usr/local/opt/openssl@1.1/bin:$PATH
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export FILTER_BRANCH_SQUELCH_WARNING=1
 
+export COPYFILE_DISABLE=true
+
 export GPG_TTY=$(tty)
 
 function socksssh() {
@@ -36,7 +38,7 @@ function wiresharkssh() {
     rm /tmp/tcpdump;
 }
 
-alias tar='tar --disable-copyfile --exclude=.DS_Store'
+alias tar='tar --exclude=.DS_Store'
 alias gpg='gpg --expert --no-symkey-cache'
 alias certbot='certbot --config-dir /usr/local/etc/letsencrypt/ --logs-dir /usr/local/var/log/letsencrypt/ --work-dir /usr/local/var/lib/letsencrypt/'
 alias mysqlssh='ssh -fN -L 3307:localhost:3306 nngai@pedantry.hopto.org && mysql -h localhost -P 3307 -u root; killall ssh'
