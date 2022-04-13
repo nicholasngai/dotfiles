@@ -1,7 +1,3 @@
-export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
-export PATH=/usr/local/opt/mysql-client@5.7/bin:$PATH
-export PATH=/usr/local/opt/openssl@1.1/bin:$PATH
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export FILTER_BRANCH_SQUELCH_WARNING=1
 
