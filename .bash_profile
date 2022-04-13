@@ -1,3 +1,8 @@
+export PATH=~/.local/bin:$PATH
+export C_INCLUDE_PATH=~/.local/include:$C_INCLUDE_PATH
+export LD_LIBRARY_PATH=~/.local/lib:$LD_LIBRARY_PATH
+export DYLD_LIBRARY_PATH=~/.local/lib:$LD_LIBRARY_PATH
+
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export FILTER_BRANCH_SQUELCH_WARNING=1
 
