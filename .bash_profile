@@ -1,3 +1,5 @@
+[ -f ~/.bashrc ] && . ~/.bashrc
+
 export PATH=~/.local/bin:$PATH
 export C_INCLUDE_PATH=~/.local/include:$C_INCLUDE_PATH
 export LD_LIBRARY_PATH=~/.local/lib:$LD_LIBRARY_PATH
@@ -52,3 +54,6 @@ alias gpg='gpg --expert --no-symkey-cache'
 export NVM_DIR=~/.nvm
 . "$NVM_DIR/nvm.sh"
 . "$NVM_DIR/bash_completion"
+
+# opam configuration
+test -r /Users/nngai/.opam/opam-init/init.sh && . /Users/nngai/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
