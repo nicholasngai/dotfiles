@@ -2,6 +2,8 @@
 
 export PATH=~/.local/bin:$PATH
 export C_INCLUDE_PATH=~/.local/include:$C_INCLUDE_PATH
+export EDITOR=ex
+export VISUAL=vim
 
 case "$(uname -s)" in
     Linux)
