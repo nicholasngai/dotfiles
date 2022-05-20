@@ -56,6 +56,9 @@ Plug 'tikhomirov/vim-glsl'
 " Prisma
 Plug 'pantharshit00/vim-prisma'
 
+" plist
+Plug 'darfink/vim-plist'
+
 call plug#end()
 
 let g:prettier#autoformat = 0
