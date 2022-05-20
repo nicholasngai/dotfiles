@@ -2,5 +2,7 @@ target/
 .settings/
 .project
 .classpath
+.cache
 .DS_Store
 .*.swp
+compile_commands.json
