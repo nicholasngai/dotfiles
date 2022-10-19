@@ -4,6 +4,7 @@ export PATH=~/.local/bin${PATH+:}$PATH
 export C_INCLUDE_PATH=~/.local/include${C_INCLUDE_PATH+:}$C_INCLUDE_PATH
 export EDITOR=ex
 export VISUAL=vim
+export GPG_TTY=$(tty)
 
 case "$(uname -s)" in
     Linux)
@@ -50,8 +51,6 @@ case "$(uname -s)" in
         alias mysqlssh='ssh -fN -L 3307:localhost:3306 nngai@pedantry.hopto.org && mysql -h localhost -P 3307 -u root; killall ssh'
         ;;
 esac
-
-export GPG_TTY=$(tty)
 
 alias gpg='gpg --expert --no-symkey-cache'
 
