@@ -14,3 +14,5 @@
 	smtpserverport = 587
 	smtpuser = nicholas@ngai.me
 	smtpencryption = tls
+[diff]
+	algorithm = histogram
