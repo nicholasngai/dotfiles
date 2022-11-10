@@ -48,6 +48,15 @@ esac
 
 alias gpg='gpg --expert --no-symkey-cache'
 
+# Go configuration.
+if command -v go >/dev/null; then
+    if [ -n "$(go env GOBIN)" ]; then
+        PATH=$(go env GOBIN)${PATH+:}$PATH
+    else
+        PATH=$(go env GOPATH)/bin${PATH+:}$PATH
+    fi
+fi
+
 # nvm configuration.
 export NVM_DIR=~/.nvm
 . "$NVM_DIR/nvm.sh"
