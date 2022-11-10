@@ -1,12 +1,5 @@
 [ -f ~/.bashrc ] && . ~/.bashrc
 
-export PATH=~/.local/bin${PATH+:}$PATH
-export C_INCLUDE_PATH=~/.local/include${C_INCLUDE_PATH+:}$C_INCLUDE_PATH
-export EDITOR=ex
-export VISUAL=vim
-export HISTSIZE=100000
-export GPG_TTY=$(tty)
-
 case "$(uname -s)" in
     Linux)
         export LD_LIBRARY_PATH=~/.local/lib${LD_LIBRARY_PATH+:}$LD_LIBRARY_PATH
@@ -62,3 +55,10 @@ export NVM_DIR=~/.nvm
 
 # opam configuration
 test -r /Users/nngai/.opam/opam-init/init.sh && . /Users/nngai/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+export PATH=~/.local/bin${PATH+:}$PATH
+export C_INCLUDE_PATH=~/.local/include${C_INCLUDE_PATH+:}$C_INCLUDE_PATH
+export EDITOR=ex
+export VISUAL=vim
+export HISTSIZE=100000
+export GPG_TTY=$(tty)
