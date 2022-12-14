@@ -2,10 +2,10 @@
 
 case "$(uname -s)" in
     Linux)
-        export LD_LIBRARY_PATH=~/.local/lib${LD_LIBRARY_PATH+:}$LD_LIBRARY_PATH
+        export LD_LIBRARY_PATH=~/.local/lib:/usr/local/lib${LD_LIBRARY_PATH+:}$LD_LIBRARY_PATH
         ;;
     Darwin)
-        export DYLD_LIBRARY_PATH=~/.local/lib${DYLD_LIBRARY_PATH+:}$DYLD_LIBRARY_PATH
+        export DYLD_LIBRARY_PATH=~/.local/lib:/usr/local/lib${DYLD_LIBRARY_PATH+:}$DYLD_LIBRARY_PATH
 
         export BASH_SILENCE_DEPRECATION_WARNING=1
         export FILTER_BRANCH_SQUELCH_WARNING=1
@@ -65,8 +65,8 @@ export NVM_DIR=~/.nvm
 # opam configuration
 test -r /Users/nngai/.opam/opam-init/init.sh && . /Users/nngai/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
-export PATH=~/.local/bin${PATH+:}$PATH
-export C_INCLUDE_PATH=~/.local/include${C_INCLUDE_PATH+:}$C_INCLUDE_PATH
+export PATH=~/.local/bin:/usr/local/bin${PATH+:}$PATH
+export C_INCLUDE_PATH=~/.local/include:/usr/local/include${C_INCLUDE_PATH+:}$C_INCLUDE_PATH
 export EDITOR=ex
 export VISUAL=vim
 export HISTSIZE=100000
