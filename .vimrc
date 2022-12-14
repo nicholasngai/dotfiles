@@ -15,7 +15,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-autocmd FileType css,html,javascript,javascriptreact,json,markdown,ocaml,prisma,scss,tex,typescript,typescriptreact,verilog,xhtml,xml,xsd,xslt,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType css,html,javascript,javascriptreact,json,markdown,ocaml,prisma,proto,scss,tex,typescript,typescriptreact,verilog,xhtml,xml,xsd,xslt,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType go setlocal noexpandtab
 autocmd FileType html,markdown,xhtml setlocal spell spelllang=en_us
 
@@ -55,6 +55,9 @@ Plug 'tikhomirov/vim-glsl'
 
 " Prisma
 Plug 'pantharshit00/vim-prisma'
+
+" Protobuf
+Plug 'uarun/vim-protobuf'
 
 " plist
 Plug 'darfink/vim-plist'
