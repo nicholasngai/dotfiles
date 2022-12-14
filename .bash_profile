@@ -67,6 +67,7 @@ test -r /Users/nngai/.opam/opam-init/init.sh && . /Users/nngai/.opam/opam-init/i
 
 export PATH=~/.local/bin:/usr/local/bin${PATH+:}$PATH
 export C_INCLUDE_PATH=~/.local/include:/usr/local/include${C_INCLUDE_PATH+:}$C_INCLUDE_PATH
+export PKG_CONFIG_PATH=~/.local/lib/pkgconfig:/usr/local/lib/pkgconfig${PKG_CONFIG_PATH+:}$PKG_CONFIG_PATH
 export EDITOR=ex
 export VISUAL=vim
 export HISTSIZE=100000
