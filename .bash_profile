@@ -11,6 +11,11 @@ case "$(uname -s)" in
         export FILTER_BRANCH_SQUELCH_WARNING=1
         export COPYFILE_DISABLE=true
 
+        # Homebrew Ruby.
+        export PATH=/usr/local/opt/ruby/bin${PATH+:}$PATH
+        export C_INCLUDE_PATH=/usr/local/opt/ruby/include${C_INCLUDE_PATH+:}$C_INCLUDE_PATH
+        export DYLD_LIBRARY_PATH=/usr/local/opt/ruby/lib${DYLD_LIBRARY_PATH+:}$DYLD_LIBRARY_PATH
+
         function socksssh() {
             if ! [[ -z $1 ]]; then
                 IFS=$'\n';
