@@ -76,4 +76,5 @@ export PKG_CONFIG_PATH=~/.local/lib/pkgconfig:/usr/local/lib/pkgconfig${PKG_CONF
 export EDITOR=ex
 export VISUAL=vim
 export HISTSIZE=100000
+export HISTFILESIZE=100000
 export GPG_TTY=$(tty)
