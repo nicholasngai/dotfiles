@@ -62,6 +62,9 @@ if command -v go >/dev/null; then
     fi
 fi
 
+# Rust configuration.
+export PATH=~/.cargo/bin${PATH+:}$PATH
+
 # nvm configuration.
 export NVM_DIR=~/.nvm
 . "$NVM_DIR/nvm.sh"
