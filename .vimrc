@@ -11,12 +11,15 @@ set backspace=indent,eol,start
 filetype plugin indent on
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
+autocmd BufRead,BufNewFile ~/git/roblox/* setlocal colorcolumn=120 textwidth=120
+
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
 autocmd FileType css,html,javascript,javascriptreact,json,markdown,ocaml,prisma,proto,scss,tex,typescript,typescriptreact,verilog,xhtml,xml,xsd,xslt,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType go setlocal noexpandtab
 autocmd FileType html,markdown,xhtml setlocal spell spelllang=en_us
+autocmd FileType markdown setlocal textwidth=0 colorcolumn=0
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
