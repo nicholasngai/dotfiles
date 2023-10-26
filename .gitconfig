@@ -15,3 +15,5 @@
 	smtpencryption = tls
 [diff]
 	algorithm = histogram
+[push]
+	autoSetupRemote = true
