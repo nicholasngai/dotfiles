@@ -45,6 +45,9 @@ Plug 'majutsushi/tagbar'
 Plug 'prettier/vim-prettier'
 Plug 'ycm-core/YouCompleteMe'
 
+" Omnisharp
+Plug 'omnisharp/omnisharp-vim'
+
 " TypeScript/TSX
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
@@ -66,8 +69,8 @@ Plug 'darfink/vim-plist'
 
 call plug#end()
 
+" Prettier config.
 let g:prettier#autoformat = 0
-
 " max line length that prettier will wrap on
 let g:prettier#config#print_width = 80
 " number of spaces per indentation level
@@ -94,5 +97,12 @@ let g:prettier#config#config_precedence = 'prefer-file'
 let g:prettier#config#prose_wrap = 'preserve'
 " css|strict|ignore
 let g:prettier#config#html_whitespace_sensitivity = 'css'
+
+" YouCompleteMe config.
+let g:ycm_roslyn_binary_path = '/Users/nngai/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp'
+
+" Omnisharp config.
+let g:OmniSharp_server_use_net6 = 1
+let g:OmniSharp_server_stdio = 0
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html PrettierAsync
