@@ -25,6 +25,11 @@ case "$(uname -s)" in
             export PKG_CONFIG_PATH=$HOMEBREW_PREFIX/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}
         fi
 
+        # Bash completion.
+        if [ -f "$HOMEBREW_PREFIX/etc/bash_completion" ]; then
+          . "$HOMEBREW_PREFIX/etc/bash_completion"
+        fi
+
         # Homebrew Ruby.
         export PATH=$HOMEBREW_PREFIX/opt/ruby/bin${PATH:+:$PATH}
         export C_INCLUDE_PATH=$HOMEBREW_PREFIX/opt/ruby/include${C_INCLUDE_PATH:+:$C_INCLUDE_PATH}
