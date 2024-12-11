@@ -1,6 +1,7 @@
 syntax on
 
 set encoding=utf8
+set history=10000
 
 set number ruler
 set colorcolumn=80
