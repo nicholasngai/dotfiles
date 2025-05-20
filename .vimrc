@@ -17,8 +17,8 @@ autocmd BufRead,BufNewFile ~/git/roblox/* setlocal colorcolumn=120 textwidth=120
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-autocmd FileType css,html,javascript,javascriptreact,json,markdown,ocaml,prisma,proto,scss,tex,typescript,typescriptreact,verilog,xhtml,xml,xsd,xslt,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd FileType go setlocal noexpandtab
+autocmd FileType css,html,javascript,javascriptreact,json,markdown,ocaml,prisma,proto,scss,sql,tex,typescript,typescriptreact,verilog,xhtml,xml,xsd,xslt,yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType go,lua setlocal noexpandtab
 autocmd FileType html,markdown,xhtml setlocal spell spelllang=en_us
 autocmd FileType markdown setlocal textwidth=0 colorcolumn=0
 
