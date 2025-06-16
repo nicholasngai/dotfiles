@@ -16,13 +16,13 @@ case "$(uname -s)" in
         export COPYFILE_DISABLE=true
 
         # Get Homebrew prefix.
-        if [ "$(arch)" = 'x86_64' ]; then
-            HOMEBREW_PREFIX=/usr/local
-        else
+        if [ "$(uname -m)" = 'arm64' ]; then
             HOMEBREW_PREFIX=/opt/homebrew
             export PATH=$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin${PATH:+:$PATH}
             export C_INCLUDE_PATH=$HOMEBREW_PREFIX/include${C_INCLUDE_PATH:+:$C_INCLUDE_PATH}
             export PKG_CONFIG_PATH=$HOMEBREW_PREFIX/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}
+        else
+            HOMEBREW_PREFIX=/usr/local
         fi
 
         # Bash completion.
